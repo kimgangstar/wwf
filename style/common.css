@@ -1,0 +1,39 @@
+/* 공통 common.css */
+#wrap {}
+#wrap * {transition:all 0.3s;} /* 반응형 웹 사이즈가 바뀔때 자연스럽게 바뀌게 하는 방법 */
+#wrap .container {
+    min-width: 320px;
+}
+/* mobile design - .sponsor_btn */
+#wrap .container .sponsor_btn {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 37.5px;
+    background: linear-gradient(90deg,#FE9300,#FF7300);
+    width: 164px; height: 41px;
+    margin: 0 auto;
+}
+#wrap .container .sponsor_btn::after {
+    content: '>'; 
+    display: block; 
+    color: #fff;
+    font-size: 0.75rem;
+    transition: font-weight 0.3s;
+}
+#wrap .container .sponsor_btn:hover::after {
+    animation: btn 0.4s linear alternate infinite;
+    font-weight: 600;
+}
+#wrap .container .sponsor_btn em {
+    color: #fff;
+    font-weight: 500;
+}
+
+@keyframes btn {
+    0% {transform: translateX(0)}
+    100% {transform: translateX(4px);}
+}
+
