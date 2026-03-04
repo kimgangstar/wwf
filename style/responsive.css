@@ -28,7 +28,7 @@
     #wrap .quiz_bg .quiz {flex-flow: row nowrap; gap: 100px;}
     #wrap .quiz_bg .quiz .quiz_list h1 {font-size: 2.5rem;}
     #wrap .quiz_bg .quiz .quiz_list h2 span {font-size: 1.25rem; display: inline;}
-    #wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li label {font-size: 1.25rem; /* background-size: 28px; */}
+    #wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li label {font-size: 1.25rem; background-size: 28px; line-height: 2; display: block;}
     
 }/* 1024~ */
 @media screen and (min-width:1250px) {
