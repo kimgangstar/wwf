@@ -2,8 +2,9 @@
 #wrap {}
 #wrap * {transition:all 0.3s;} /* 반응형 웹 사이즈가 바뀔때 자연스럽게 바뀌게 하는 방법 */
 #wrap .container {
-    min-width: 320px;
-}
+    min-width: 320px; /* 여기까지만 작아져라 */
+} 
+#wrap .quiz_bg .contents {max-width: 1250px; margin: 0 auto;} /* 여기까지만 커져라 */
 /* mobile design - .sponsor_btn */
 #wrap .container .sponsor_btn {
     display: flex;
@@ -31,6 +32,7 @@
     color: #fff;
     font-weight: 500;
 }
+
 
 @keyframes btn {
     0% {transform: translateX(0)}
