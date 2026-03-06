@@ -3,8 +3,28 @@
 #wrap * {transition:all 0.3s;} /* 반응형 웹 사이즈가 바뀔때 자연스럽게 바뀌게 하는 방법 */
 #wrap .container {
     min-width: 320px; /* 여기까지만 작아져라 */
+    background-size: cover; background-position: center;
+    padding: 70px 15px;
 } 
-#wrap .quiz_bg .contents {max-width: 1250px; margin: 0 auto;} /* 여기까지만 커져라 */
+
+#wrap .container .contents {max-width: 1250px; margin: 0 auto;}
+#wrap .container .contents > * {margin: 0 0 22px;}
+#wrap .container .contents h1 {
+font-size: 1.38rem; font-weight: 500; line-height: 1.2;
+}
+#wrap .container .contents h1 .highlight {
+    background-color: #fff; color: #050505; 
+    font-size: 1.35rem; font-weight: 500;
+}
+#wrap .container .contents h1+p {
+    font-size: 0.81rem; 
+    line-height: 1.7; letter-spacing: -0.02rem;
+}
+
+#wrap .quiz_bg .contents {
+    max-width: 1250px; 
+    margin: 0 auto;
+} /* 여기까지만 커져라 */
 /* mobile design - .sponsor_btn */
 #wrap .container .sponsor_btn {
     display: flex;
@@ -32,7 +52,6 @@
     color: #fff;
     font-weight: 500;
 }
-
 
 @keyframes btn {
     0% {transform: translateX(0)}
