@@ -98,8 +98,8 @@
         'sponser2 sponser3'
         'sponser4 sponser4'
         ;
-        
     }
+    #wrap .container .sponsor_btn::after {font-size: 2rem;}
     /* ------------------------10행---------------------------------------------- */
 }/* 1024~ */
 @media screen and (min-width:1250px) {
